@@ -1955,6 +1955,13 @@ $("embed").each(function() {
     	$(this).css("zIndex", "99");
     }
 });	
+				
+$("button").each(function() {
+	if($(this).parents('.box2d').length < 1) {
+		$(this).addClass("box2d");
+		$(this).css("zIndex", "99");
+	    }
+});	
 			
 			}
 			
